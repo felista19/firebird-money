@@ -8,6 +8,7 @@
 - [Configuration](#configuration)
 - [How to run](#how-to-run)
 - [API](#api)
+- [Data model](#data-model)
 - [Tests](#tests)
 - [License](#license)
 
@@ -66,6 +67,11 @@ Every transaction response includes its joined category: `category_name_en`, `ca
 - `POST /categories` — create a category (`name_en`, `name_fr`, `type`, where `type` is `income`, `expense`, or `transfer`).
 - `PATCH /categories/{id}` — partially update a category (only the fields you send change).
 - `DELETE /categories/{id}` — delete a category.
+
+## Data model
+
+The API's entities and how they relate; Household, User, Account, Institution, Merchant, Category, Tag, Transaction, and Rule:
+![API class diagram](docs/images/api-diagram.png)
 
 ## Tests
 
